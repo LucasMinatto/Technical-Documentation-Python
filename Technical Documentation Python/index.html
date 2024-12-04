@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentatio</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+        <li><a class="nav-link" href="#Python_and_Other_Languages">Python and Other Languages</a></li>
+        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Constants">Constants</a></li>
+        <li><a class="nav-link" href="#Control_Structures">Control Structures</a></li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li><a class="nav-link" href="#Summary">Summary</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+          <article>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It is a versatile, dynamically-typed language widely used for web development, data analysis, artificial intelligence, scientific computing, and many other domains. Python emphasizes code readability with its use of significant whitespace and straightforward syntax, making it an excellent choice for both beginners and experienced developers.</p>
+            <p>Python provides an extensive standard library that includes modules for handling tasks such as file I/O, string manipulation, mathematics, and internet protocols. Additionally, Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+          <p>Python's functionality can be extended with a rich ecosystem of third-party libraries and frameworks, making it suitable for a wide range of applications.<p>
+        </article>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <article>
+          <p>This guide assumes you have the following basic background:</p>
+          <ul>
+            <li>A general understanding of programming concepts such as variables, loops, and functions;</li>
+            <li>Familiarity with text editors or IDEs used for writing code;</li>
+            <li>Basic knowledge of the command line for running scripts.</li>
+          </ul>
+          <p>If you are new to programming, Python is an excellent language to start with. Consider exploring beginner-friendly tutorials or interactive environments like Jupyter Notebook to practice Python concepts.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Python_and_Other_Languages">
+        <header>Python and Other Languages</header>
+          <article>
+            <p>Python shares some characteristics with other programming languages, but it stands out for its simplicity and flexibility. Unlike statically-typed languages like Java or C++, Python uses dynamic typing, allowing you to assign different types of values to the same variable without declaring the type explicitly.</p>
+            <p>Python’s object-oriented features are optional, allowing you to use procedural or functional paradigms as needed. Its approach to object orientation uses class-based inheritance and promotes clean, modular code.</p>
+            <p>Python scripts are typically shorter and easier to write compared to their counterparts in other languages, owing to its simple syntax and powerful built-in functions.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <article>
+          <p>To write your first Python program, simply open a Python interpreter or create a .py file and write the following:</p>
+          <code>print("Hello, World!")</code>
+          <p>Run the program from the command line or an IDE to see the output. Python's print() function makes it easy to display output to the console.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+        <p>In Python, variables are dynamically typed, meaning you don’t need to declare their type explicitly. Python uses meaningful names for variables and enforces proper indentation for code blocks.</p>
+        <code>x = 42
+name = "Alice"
+is_active = True
+</code>
+<p><strong>Rules for variable names:</strong></p>
+<ul>
+  <li>Must start with a letter or an underscore (_);</li>
+  <li>Cannot start with a digit;</li>
+  <li>Can include letters, digits, and underscores;</li>
+  <li>Are case-sensitive (name and Name are different).</li>
+  </ul>
+  </article>
+  </section>
+  <section class="main-section" id="Constants">
+    <header>Constants</header>
+    <article>
+      <p>Python doesn’t have a built-in constant declaration like const in some languages. By convention, constants are written in all uppercase letters.</p>
+      <code>PI = 3.14159
+MAX_CONNECTIONS = 100
+      </code>
+      <p>Although Python allows modification of such variables, it’s understood by convention that they should remain unchanged.</p>
+    </article>
+    </section>
+    <section class="main-section" id="Control_Structures">
+      <header>Control Structures</header>
+        <article>
+          <p>Python uses indentation to define code blocks, making it easy to read and maintain.</p>
+          <p><strong>If...else statement:</strong></p>
+          <code>if condition:
+    # Code block if condition is True
+else:
+    # Code block if condition is False
+    </code>
+    <code>x = 10
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is less than or equal to 5")
+    </code>
+    </article>
+    </section>
+    <section class= "main-section" id ="Loops">
+    <header>Loops</header>
+    <article>
+    <p>Python supports two main types of loops:</p>
+    <p><strong>For Loop</strong></p>
+    <code>for i in range(5):
+    print(i)  # Outputs numbers 0 through 4
+    </code>
+    <p><strong>While Loop</strong></p>
+    <code>count = 0
+while count &lt 5:
+    print(count)
+    count += 1
+    </code>
+    </article>
+    </section>
+    <section class="main-section" id="Functions">
+    <header>Functions</header>
+    <article>
+    <p>Functions in Python are defined using the def keyword, followed by a function name, parameters (optional), and a code block.</p>
+    <code>def greet(name):
+    return f"Hello, {name}!"
+    </code>
+      <p>You can call this function as follows:</p>
+      <code>print(greet("Alice"))  # Outputs: Hello, Alice!</code>
+      <p>Python supports both positional and keyword arguments, as well as default parameter values.</p>
+      </article>
+      </section>
+      <section class="main-section" id="Summary">
+        <header>Summary</header>
+        <article>
+          <p>Python’s simplicity and versatility make it a powerful language for beginners and professionals alike. It excels in a wide range of applications, from web development to data science, and its vast library ecosystem makes it highly extensible. Start practicing today to unlock the potential of this remarkable language!</p>
+      <p>For more information, refer to the <a href ="https://docs.python.org/3/" target="_blank">official Python documentation.</a>    
+    </article>
+    </section>
+    </main>
+  </body>
+</html>
